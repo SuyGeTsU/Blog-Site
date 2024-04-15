@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0px;
+
+}
+
+:root {
+    --color: rgb(0, 95, 196);
+    --padding: 20px 5%;
+    --tran: all 0.3s ease-in-out;
+}
+
+/* Navigation */
+.navi {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--padding);
+    align-items: center;
+}
+
+.navi a {
+    margin: 0px 20px;
+    color: #0c0b0be6;
+    transition: var(--tran);
+}
+
+.navi a:hover {
+    color: rgb(87, 232, 87);
+}
+
+#btn,
+.btn {
+    padding: 10px 20px;
+    color: #ffff;
+    background-color: var(--color);
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {
+    width: 200px;
+}
+
+#btn:hover,
+.btn:hover {
+    box-shadow: inset 0px 0px 1px 1px;
+    color: lightgreen;
+}
+
+/* ************ */
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+}
+
+.bannerHead {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bannerHead h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.bannerHead h1 span {
+    color: var(--color);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bannerHead p {
+    margin-bottom: 10px;
+}
+
+.bannerImg {
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    transition: var(--tran);
+}
+
+.bannerImg img {
+    width: 600px;
+}
+
+
+/* About Us */
+.aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--padding);
+}
+
+.aboutImg {
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+
+.aboutContent {
+    padding: 20px;
+    width: 60%;
+}
+
+.aboutContent p span {
+    color: var(--color);
+    font-size: 2rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Recent Blogs */
+.recentBlogs {
+    margin-top: 40px;
+    background-color: var(--color);
+    padding: var(--padding);
+}
+
+.blogsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+.individualRecentBlogs {
+    width: 30%;
+    background-color: #ffff;
+    height: 100%;
+    margin: 20px;
+}
+
+.individualRecentBlogs img {
+    width: 100%;
+    height: 40vh;
+    border:1px solid black;
+}
+
+.recentBlogContent {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recentBlogContent h4,
+.recentBlogContent p,
+.recentBlogContent b {
+    margin-bottom: 15px;
+}
+
+.recentBlogContent h4{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recentBlogContent b{
+    font-size: 0.75rem;
+    text-decoration: underline;
+
+    
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.blogDetailsDivContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogDetailsDivContent h2,b{
+    margin-bottom: 20px;
+}
+.blogDetailsDivContent b{
+    text-decoration: underline;
+}
+
+.blogDetailsDiv img{
+    border:4px solid rgba(0, 0, 0, 0.545);
+}
+
+/* Contact Us */
+.contactUs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--padding);
+    align-items: center;
+}
+
+.contactImg {
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+}
+
+.contactImg img {
+    width: 100%;
+    /* height: 40vh; */
+
+}
+
+.contactUs form {
+    box-shadow: 0px 0px 3px 3px #fafafa;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+}
+
+.formAddress {
+    display: flex;
+    padding: 10px;
+
+}
+
+.formAddress div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0px 0px 3px 3px #fafafa;
+
+}
+
+.formAddress div i {
+    color: var(--color);
+    margin-bottom: 5px;
+}
+
+.formAddress div p span {
+    color: var(--color);
+}
+
+.formField {
+    padding: 30px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color);
+}
+
+.formBtn input {
+    outline: none;
+    border: none;
+
+}
+
+/* footer */
+footer {
+    padding: var(--padding);
+    background-color: var(--color);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul a {
+    padding: 6px 10px;
+    margin: 0px 10px;
+    background-color: #ffff;
+    color: var(--color);
+    border-radius: 20px;
+    transition: var(--tran);
+}
+
+footer ul a {
+    box-shadow: inset 0px 0px 1px 1px grey;
+    color: grey;
+}
+
+/* Blog Details */
+.detailsBlog {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+    justify-content: space-around;
+}
+
+.blogDetailsDiv {
+    width: 70%;
+}
+
+.blogDetailsDivContent {
+    padding: 20px;
+}
+
+.blogDetailsDiv img {
+    width: 100%;
+    height: 80vh;
+}
+
+.blogDetailsDivContent h3,
+.blogDetailsDivContent b {
+    margin-bottom: 5px;
+}
+
+.blogDetailsDivContent b {
+    color: var(--color);
+}
+
+.blogCategory {
+    display: flex;
+    background-color: #fafafa;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.blogCategory h4 {
+    color: var(--color);
+}
+
+.blogCategory a {
+    color: black;
+    margin: 10px 0px;
+    padding: 5px;
+    border-bottom: 1px solid var(--color);
+}
+
+.blogCategory a:hover {
+    color: grey;
+}
+
+/* Comments */
+.comment {
+    padding: 20px 10%;
+}
+
+.individualComments {
+    margin: 20px 0px;
+    width: 40%;
+    box-shadow: 0px 0px 10px 10px -9px lightgray;
+    background-color: #fafafa;
+    padding: 10px;
+    display: flex;
+}
+
+.commentImg {
+    width: 20%;
+
+}
+
+.commentImg img {
+    width: 100%;
+}
+
+.commentContent {
+    width: 80%;
+    padding: 10px;
+}
+
+.commentLeft {
+    float: inline-start;
+}
+
+.commentRight {
+    float: right;
+}
+
+/* Comment Form */
+.commentForm {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+}
+
+.commentForm input,
+.commentForm textarea {
+    margin-right: 20px;
+    background-color: #fafafa;
+    border: none;
+    outline: none;
+}
+
+.commentForm textarea {
+    width: 20%;
+}

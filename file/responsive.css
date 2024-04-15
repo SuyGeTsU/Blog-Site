@@ -1,0 +1,139 @@
+@media screen and (min-device-width:768px) and (max-device-width:1024px){
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .bannerHead {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannerImg,
+    .aboutImg,
+    .aboutContent, 
+    .bannerHead,
+    .contactUs form,
+    .blogImg{
+        width:100%;
+    }
+
+    .individualRecentBlogs {
+        width: 42%;
+    }
+    .individualRecentBlogs img{
+        height: 10vh;
+    }
+    .blogDetailsDiv {
+        width: 42%;
+    }
+    .blogDetailsDiv img{
+        height: 10vh;
+    }
+
+    .ContactImg{
+        display: none;
+    }
+
+    .individualComments{
+        width: 50%;
+    }
+
+    .blogDetailsDiv img{
+        height: 50vh;
+    }
+}
+
+@media screen and (min-device-width:200px) and (max-device-width:768px){
+    .navi{
+        width: 100%;
+        justify-content:space-between;
+    }
+    .formAddress{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 75%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .bannerImg img{
+        width: 100%;
+    }
+
+    .aboutImg,
+    .aboutContent, 
+    .bannerHead,
+    .contactUs form,
+    .blogImg{
+        width:100%;
+    }
+
+    .aboutImg img{
+        width: 100%;
+    }
+
+    .individualRecentBlogs{
+        width: 100%;
+    }
+    .blogDetailsDiv{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .bannerHead {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannerImg,
+    .aboutImg,
+    .aboutContent, 
+    .bannerHead,
+    .contactUs form,
+    .blogImg{
+        width:100%;
+    }
+
+    .individualRecentBlogs {
+        width: 38%;
+    }
+    .individualRecentBlogs img{
+        height: 10vh;
+    }
+    .blogDetailsDiv {
+        width: 100%;
+    }
+    .blogDetailsDiv img{
+        height: 25vh;
+    }
+    .blogsDiv{
+        justify-content: space-around;
+    }
+
+
+
+    .recentBlogContent{
+        height: 50%;
+    }
+    
+    .blogDetailsDivContent{
+        height: 50%;
+    }
+
+    .ContactImg{
+        display: none;
+    }
+
+    .individualComments{
+        width: 50%;
+    }
+}
